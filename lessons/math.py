@@ -16,7 +16,7 @@ print(3 ** 3)
 
 a = 50
 b = 25
-print ( a+b)
+print ( a+b )
 
 
 
@@ -30,4 +30,10 @@ print(float1 / float2)
 numbers = [7,9,8,5]
 average = sum(numbers) / len(numbers)
 print(average)
+
+minutes = 125
+hours, mins = divmod(minutes, 60)
+print(hours, mins)
+
+prise = 200
 
