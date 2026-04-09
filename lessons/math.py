@@ -37,3 +37,18 @@ print (perimeter)
 int = 5490
 last_digit = int % 10
 print ( last_digit )
+
+
+
+
+
+numbers = 2025
+digit1 = numbers // 1000
+digit2 = (numbers // 100) % 10
+digit3 = (numbers // 10) % 10
+digit4 = numbers % 10
+print (digit1)
+print (digit2)
+print (digit3)
+print (digit4)
+
