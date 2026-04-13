@@ -13,4 +13,16 @@ things.extend(things_2)
 print("Final list", things)
 
 # Калькулятор
-
+num1 = float(input("Перше число: "))
+op = input("Дiя(+, -, *, /,) : " )
+num2 = float(input("Друге число: "))
+if op == "+":
+    print(num1 + num2)
+elif op == "-":
+    print(num1 - num2)
+elif op == "*":
+    print(num1 * num2)
+elif op == "/":
+    print(num1 / num2 if num2 != 0 else "Ділення на нуль")
+else:
+    print("Неправильна дiя")
