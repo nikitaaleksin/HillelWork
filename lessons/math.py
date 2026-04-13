@@ -1,3 +1,4 @@
+# Тренувальнi вправи
 a = 50
 b = 25
 print ( a+b )
@@ -13,40 +14,44 @@ a = 3
 b = 3
 print(a ** b)
 
-
+# Середне число
 numbers = [7,9,8,5]
 average = sum(numbers) / len(numbers)
 print(average)
 
+# час та хвилина
 minutes = 125
 hours, mins = divmod(minutes, 60)
 print(hours, mins)
 
+# Цiна зi знижкою
 prise = 200
 discount_percent = 80
 print ( prise * (discount_percent / 100) )
 
 
 
-
+# Perimeter
 a = 4
 b = 3
 perimeter = 2 * (a + b)
 print (perimeter)
 
-int = 5490
-last_digit = int % 10
+# Last digit
+int3 = 5490
+last_digit = int3 % 10
 print ( last_digit )
 
 
 
 
-
-numbers = 2025
-digit1 = numbers // 1000
-digit2 = (numbers // 100) % 10
-digit3 = (numbers // 10) % 10
-digit4 = numbers % 10
+# Enter your numbers
+numbers = (input("Your numbers"))
+num = int(numbers)
+digit1 =   num// 1000
+digit2 = (num // 100) % 10
+digit3 = (num // 10) % 10
+digit4 = num % 10
 print (digit1)
 print (digit2)
 print (digit3)
