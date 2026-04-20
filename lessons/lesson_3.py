@@ -1,6 +1,4 @@
 # Нуль на кiнець
-from lessons.math import last_digit
-
 list1 = [123, 0, 45, 0, 67, 0, 234]
 result_with_zero_at_the_end = list()
 count_of_zero_at_the_end = 0
@@ -22,6 +20,14 @@ sum_lst5 = numbers2[0] + numbers2[2] + numbers2[4]
 print(sum_lst5)
 multiply_lst2 = sum_lst5 * numbers2[-1]
 print(multiply_lst2)
+
+# Три числа
+import random
+my_list = random.randint(3, 10)
+random_list1 = [random.randint(1, 10) for _ in range(my_list)]
+print(random_list1)
+list2 = [random_list1[0], ramdom_list1[2], random_list1[-2]]
+print(list2)
 
 
 
