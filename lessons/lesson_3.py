@@ -23,14 +23,11 @@ print(multiply_lst2)
 
 # Три числа
 import random
+
 my_list = random.randint(3, 10)
 random_list1 = [random.randint(1, 10) for _ in range(my_list)]
-print(random_list1)
-list2 = [random_list1[0], ramdom_list1[2], random_list1[-2]]
-print(list2)
+print("Перший лист", random_list1)
 
-
-
-
-
+list2 = [random_list1[0], random_list1[2], random_list1[-2]]
+print("Рузультат", list2)
 
