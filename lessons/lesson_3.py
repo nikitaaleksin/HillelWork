@@ -42,10 +42,4 @@ print(result)
 
 
 
-numbers2 = [int(x) for x in input("Your numbers: ").split(", ")]
-i = 0
-for index, num in enumerate(numbers2):
-    if index % 2 == 0 and index <= 4:
-        i += num
-result = i * numbers2[-1]
-print(result)
+
