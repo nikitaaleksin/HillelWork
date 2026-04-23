@@ -1,4 +1,4 @@
-# Модифiкований канкультятор
+#Модифiкований канкультятор
 while True:
     num1 = float(input("Перше число: "))
     op = input("Дiя(+, -, *, /,) : ")
@@ -6,29 +6,28 @@ while True:
     if op == "+":
         print(num1 + num2)
     elif op == "-":
-        print(num1 - num2)
+       print(num1 - num2)
     elif op == "*":
         print(num1 * num2)
     elif op == "/":
         print(num1 / num2 if num2 != 0 else "Ділення на нуль")
     else:
         print("Неправильна дiя")
-
     choice = input("Продовжити роботу? (y/n):")
     if choice == "y":
-        continue
+           continue
     if choice == "n":
-       print("Роботу завершено")
-       break
+      print("Роботу завершено")
+      break
 
 
 #hashtag
 while True:
     my_string = input("Введiть слова: ")
-    my_string = my_string.title().replace(" ", "")
+    my_string = my_string.title()
     for l in "'!,.?:":
         my_string = my_string.replace(l, "")
-    hashtag = "#" + my_string.lower().replace(" ", "")
+    hashtag = "#" + my_string.replace(" ", "")
     hashtag = hashtag[:140]
     print(hashtag)
     choice = input("Продовжити роботу? (y/n):")
