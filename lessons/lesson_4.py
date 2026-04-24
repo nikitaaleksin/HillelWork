@@ -46,7 +46,7 @@ while True:
 
 
 
-
+#Ім'я змінної
 from string import digits, punctuation
 user = input('Enter you variable example:')
 is_start_with_digits = user[0].isdigit() if user else False
