@@ -1,7 +1,7 @@
 #Діапазон букв
 from string import ascii_letters
 
-from lessons.math import minutes
+
 
 while True:
  string_1 = input("Введiть двi лiтери через дефiс: ")
@@ -20,6 +20,18 @@ while True:
 #
 import time
 user_time = input("Input your number:")
-for t in divmod(int(user_time), 60):
+days, second = divmod(int(user_time), 86400)
+hours, second = divmod(second, 3600)
+minutes, seconds = divmod(second, 60)
+if days % 10 == 1 and days % 100 != 11:
+    day_l = "день"
+elif 2<= days % 10 <=4 and days % 100 < 10 or days % 100 >=20:
+    day_l = "днi"
+else:
+    day_l = "днiв"
+h = str(hours).zfill(2)
+m = str(minutes).zfill(2)
+s = str(seconds).zfill(2)
+print(f"{days}, {day_l}, {h} : {m} : {s}")
     
 
